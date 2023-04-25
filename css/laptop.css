@@ -1,0 +1,524 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+   display: block;
+}
+body {
+   line-height: 1;
+}
+ol,
+ul {
+   list-style: none;
+}
+blockquote,
+q {
+   quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+   content: "";
+   content: none;
+}
+table {
+   border-collapse: collapse;
+   border-spacing: 0;
+}
+/* Global */
+* {
+   box-sizing: border-box;
+}
+.bg-grey {
+   background: #f7f7f7;
+}
+
+section > .container {
+   width: 1325px;
+   margin: auto;
+   display: block;
+}
+
+#nav-bar {
+   text-align: center;
+}
+
+/* Banner */
+#banner {
+   height: 475px;
+   overflow: hidden;
+   padding: 50px;
+}
+.dark-bg {
+   position: relative;
+   background-color: black;
+}
+.banner-img {
+   display: block;
+   width: 100%;
+   opacity: 0.7;
+}
+.banner-content {
+   text-align: center;
+   color: white;
+   position: absolute;
+   top: 150px;
+   left: 50%;
+   transform: translate(-50%, 0);
+}
+.banner-content h1 {
+   font-size: 30px;
+}
+.banner-content span {
+   font-size: 15px;
+   color: rgba(255, 255, 255, 0.5);
+}
+.section-title {
+   margin-bottom: 30px;
+   padding-top: 30px;
+   font-size: 30px;
+}
+/* Navbar */
+#nav-bar .container {
+   padding-top: 0;
+   padding-bottom: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.nav-item {
+   padding: 15px;
+   border-left: 1px solid rgba(157, 152, 152, 0.5);
+   height: 50px;
+}
+.nav-item i {
+   color: #199cdb;
+}
+.nav-item a {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: black;
+   font-size: 15px;
+}
+.nav-item-1 {
+   position: relative;
+   width: 250px;
+}
+.nav-item-1 img {
+   position: absolute;
+   top: -46px;
+   left: 57px;
+   width: 125px;
+   height: 125px;
+   border: 5px solid white;
+   border-radius: 50%;
+}
+.nav-item-2 {
+   border-right: 1px solid rgba(157, 152, 152, 0.5);
+}
+.nav-item-title {
+   font-size: 20px;
+}
+.nav-item-desc {
+   font-size: 12px;
+   color: rgba(0, 0, 0, 0.5);
+}
+/* Target & Personal Info */
+#about {
+   margin-bottom: 30px;
+}
+#about .section-title {
+   font-size: 25px;
+   margin-bottom: 20px;
+}
+#target {
+   padding: 50px 30px 30px;
+}
+#target p {
+   color: rgba(0, 0, 0, 0.5);
+   font-size: 15px;
+}
+#personal-info {
+   padding: 50px 30px 30px;
+   background: #eeebeb;
+}
+#personal-info ul {
+   font-size: 15px;
+   line-height: 20px;
+}
+#personal-info ul li {
+   color: rgba(0, 0, 0, 0.5);
+}
+#personal-info ul li span {
+   color: black;
+}
+.personal-social-media {
+   display: flex;
+   margin-top: 15px;
+}
+.personal-social-media a {
+   color: #199cdb;
+   margin-right: 10px;
+}
+.input-email .notice-text {
+   margin-top: 5px;
+   color: rgba(0, 0, 0, 0.5);
+}
+.hidden {
+   display: none;
+}
+/* Job Info */
+#job-info .container {
+   width: 1100px;
+}
+#job-info .container .row {
+   justify-content: space-between;
+   column-gap: 20px;
+}
+.job-info-item {
+   border: 1px solid rgba(0, 0, 0, 0.3);
+   padding: 20px;
+   margin-bottom: 20px;
+   width: 32%;
+}
+.view-more {
+   visibility: hidden;
+   margin-bottom: 10px;
+}
+.job-info-item:hover {
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.job-info-item:hover .view-more {
+   visibility: visible;
+}
+.job-info-title {
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-end;
+   margin-bottom: 30px;
+}
+.job-info-title h1 {
+   font-size: 25px;
+}
+.job-info-title i {
+   font-size: 40px;
+   margin-right: 20px;
+}
+.job-info-content {
+   display: grid;
+   grid-template-columns: 10% 90%;
+   margin-bottom: 20px;
+}
+.blue-dot-icon {
+   width: 10px;
+   height: 10px;
+   border-radius: 50%;
+   background-color: #199cdb;
+   margin-right: 20px;
+   margin-top: 6px;
+}
+.job-info-detail {
+   color: rgba(0, 0, 0, 0.5);
+   font-size: 15px;
+}
+.job-info-detail p {
+   margin-bottom: 5px;
+}
+.detail-title {
+   font-weight: lighter;
+   font-size: 18px;
+   color: black;
+   margin-bottom: 5px;
+}
+.detail-time {
+   font-style: italic;
+   display: flex;
+   justify-content: flex-start;
+   margin-bottom: 5px;
+}
+.current-time {
+   color: white;
+   background-color: #199cdb;
+   border-radius: 6px;
+   padding: 1px 5px;
+   margin-left: 5px;
+   margin-bottom: 5px;
+}
+/* Hobby */
+.hobby-content {
+   list-style: none;
+   display: flex;
+   justify-content: space-between;
+   padding-right: 20px;
+}
+.hobby-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   color: rgba(0, 0, 0, 0.5);
+}
+.hobby-item i {
+   color: #199cdb;
+   padding: 10px;
+   border: 1px solid #199cdb;
+   border-radius: 50%;
+   margin-bottom: 10px;
+}
+.hobby-item i.ic-strategy,
+.hobby-item i.ic-hotairballoon {
+   padding-left: 13px;
+   padding-right: 13px;
+}
+/* Language */
+.language-content {
+   margin-bottom: 15px;
+}
+.language-title {
+   font-weight: lighter;
+   font-size: 18px;
+}
+.language-blue {
+   background-color: #199cdb;
+   display: inline-block;
+   height: 2px;
+   width: 45px;
+   margin-right: 10px;
+}
+.language-grey {
+   background-color: rgba(0, 0, 0, 0.5);
+   display: inline-block;
+   height: 2px;
+   width: 45px;
+   margin-right: 10px;
+}
+/* Certificate */
+#certificate {
+   margin: 30px 0;
+}
+#certificate .container {
+   width: 1100px;
+}
+.cerfiticate-item {
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+   margin: 30px 0 20px;
+}
+.cerfiticate-item img {
+   display: block;
+   width: 100%;
+}
+.row1,
+.row2 {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   padding-bottom: 10px;
+}
+.row1 {
+   border-bottom: 1px solid #d6c08d;
+}
+.cerfiticate-item2 {
+   padding-left: 10px;
+   border-left: 1px solid #d6c08d;
+}
+.certificate-detail {
+   padding-left: 20px;
+}
+.certificate-detail h5 {
+   margin-bottom: 10px;
+   font-weight: bold;
+}
+.certificate-detail p {
+   margin-bottom: 5px;
+}
+/* Project */
+#project .container {
+   width: 1100px;
+}
+.project-content {
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   column-gap: 20px;
+}
+.project-item img {
+   display: block;
+   width: 100%;
+}
+.project-detail {
+   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.project-title {
+   text-transform: uppercase;
+   padding: 15px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.project-header {
+   display: flex;
+   align-items: center;
+   padding: 15px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.project-header p {
+   margin-right: 10px;
+}
+.project-header div {
+   display: flex;
+}
+.project-year {
+   color: white;
+   background-color: #199cdb;
+   padding: 5px 10px;
+   font-size: 13px;
+   border-radius: 12px;
+}
+table {
+   height: 180px;
+}
+table th,
+table td {
+   padding: 5px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+   vertical-align: top;
+   color: rgba(0, 0, 0, 0.5);
+}
+table th {
+   padding: 5px;
+   width: 100px;
+   text-align: left;
+   vertical-align: top;
+}
+.project-link {
+   text-decoration: none;
+   text-transform: uppercase;
+   color: white;
+   background-color: #199cdb;
+   padding: 5px 10px;
+   font-size: 13px;
+   border-radius: 12px;
+}
+/* Footer */
+#footer {
+   margin-top: 30px;
+}
+.footer-content {
+   padding: 30px;
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.footer-item {
+   margin-left: 20px;
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+}
+.footer-item i {
+   font-size: 25px;
+   color: #199cdb;
+}
+.footer-item a {
+   text-decoration: none;
+   color: rgba(0, 0, 0, 0.5);
+}
